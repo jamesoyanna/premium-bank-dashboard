@@ -18,7 +18,6 @@ class DonutChart extends React.Component {
       allocated = 200000,
       total = 420000;
 
-      
     const svg = d3.selectAll(".svg"),
       width = svg.attr("width"),
       height = svg.attr("height"),
