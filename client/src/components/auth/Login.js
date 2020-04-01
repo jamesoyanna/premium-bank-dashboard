@@ -15,6 +15,25 @@ import { loginUser} from "../../actions/authActions";
      }  
    }
    
+   componentWillRecieveProps(){
+       if(nexProps.auth.isAuthenticated){
+       this.props.history.push("/accounts"); //push user to dashboard when they login
+       }
+   }
+
+   handleOnChange = e=>{
+   this.setState({[e.target.id]: e.target.value});
+   };
+
+   handleOnSubmit = e =>{
+       e.preventDefault();
+       const userData =  {
+        email: this.email,
+        password: this.password
+       };
+       this.props.loginUser(userData);
+   };
+
 
     render() {
         return (
