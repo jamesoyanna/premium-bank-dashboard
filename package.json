@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jamesoyanna/premium-bank-dashboard#readme",
   "dependencies": {
+    "core-js": "^3.6.4",
     "d3": "^5.15.0",
     "react-plaid-link": "^2.1.0",
     "react-redux": "^7.2.0"
