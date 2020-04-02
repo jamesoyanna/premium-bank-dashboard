@@ -66,9 +66,64 @@ class Panels extends Component {
                <TopPanel>
                    <div className="cards-header">
                        <h3>your cards</h3>
+                       <div className="cards">
+                           <select>
+                               <option value="">**** **** **** 0789</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div className="customer-account">
+                       <h3 className="name">{user.name}</h3>
+                       <div classNam="customer-account-card">
+                           {auth.map(account=>{
+                               return(
+                                   <ul
+                                   key={account.auth[0].account_id}
+                                   className="customer-acc"
+                                   >
+                                   <li>AccountName:</li>
+                                   <li>Card Type</li>
+                                   <li>Account:</li>   
+                                   <li>Card Number:</li>
+                                   <li>Expiry date:</li> 
+                                   <li>Status:</li>
+                                   <li>{account.accountName}</li>
+                                   <li className="cus-accnt">
+                                       {account.auth[0].official_name}
+                                   </li>
+                                   <li className="cust-accnt">{account.auth[0].name}</li>
+                                   <li className="cus-accnt">68767608977****</li>
+                                   <li className="cus-accnt">31.03.2020</li>
+                                   <li className="cus-accnt">Active</li>
+                                   </ul>
+                               );
+                           })}
+                           <img
+                           className="cus-credit-card"
+                           src={credit}
+                           alt="visa credit card"
+                           />
+                       </div>
+                   </div>
+                   <div className="acc-options">
+                       <p>
+                           <Link to="/" className="more-details">
+                               More Details
+                           </Link>
+                       </p>
+                       <div className="card-button">
+                           <button className="btn--info" type="button" name="button">
+                               Withhold Card
+                           </button>
+                           <button className="btn--success" type="button" name="button">
+                               Change Pin
+                           </button>
+                       </div>
                    </div>
                </TopPanel>
            </div>
+
+           <div className
            </section>
         )
     }
