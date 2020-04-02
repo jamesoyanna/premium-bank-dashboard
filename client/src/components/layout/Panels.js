@@ -47,7 +47,7 @@ class Panels extends React.Component {
               {auth.map(account => {
                 return (
                   <p key={account.auth[0].account_id} className="balance">
-                    {account.auth[0].balances.current} USD
+                    {account.auth[0].balances.current} NAIRA
                   </p>
                 );
               })}
@@ -94,7 +94,7 @@ class Panels extends React.Component {
                       </li>
                       <li className="cus-accnt">{account.auth[0].name}</li>
                       <li className="cus-accnt">687676078977****</li>
-                      <li className="cus-accnt">31.03.2019</li>
+                      <li className="cus-accnt">31.03.2020</li>
                       <li className="cus-accnt">Active</li>
                     </ul>
                   );
@@ -181,31 +181,27 @@ class Panels extends React.Component {
             <div className="msg-board">
               <div className="row">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur elit. Distinctio
-                  officiis officia vitae perspiciatis!
+                  Premuim bank has giving me a great bonus on my account. Thanks 
                 </p>
-                <p className="name">Karmen Electra</p>
+                <p className="name">Taiye Esho</p>
               </div>
               <div className="row">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Distinctio officiis officia vitae perspiciatis!
+                  Thank you so much premuim bank. Your service has been excellent.
                 </p>
-                <p className="name">Monika Nowaz</p>
+                <p className="name">Kelvin Oyannna</p>
               </div>
               <div className="row">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Distinctio officiis officia vitae perspiciatis!
+              I really appreaciate your banking service. I have just been paid my interst.
                 </p>
-                <p className="name">Debbie Major</p>
+                <p className="name">Jude Ogunmola</p>
               </div>
               <div className="row">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Distinctio officiis officia vitae perspiciatis!
+                  Such an awesome service you offer in premium bank. thanks for keeping in touch.
                 </p>
-                <p className="name">Brandon Jones</p>
+                <p className="name">Philips Daniels</p>
               </div>
             </div>
             <button
