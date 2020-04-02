@@ -50,7 +50,12 @@
                         <img src={notification} alt="notification icon" />
                     </li>
                     <li className="logout">
-                        
+                        Logout
+                     <img
+                     onClick = {this.handleLogoutClick}
+                     src={logout}
+                     alt="logout icon"
+                     />
                     </li>
                 </ul>
                
