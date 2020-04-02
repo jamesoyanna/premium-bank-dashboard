@@ -123,7 +123,58 @@ class Panels extends Component {
                </TopPanel>
            </div>
 
-           <div className
+           <div className="bottom-dashboard">
+               <BottomPanel className="first-child">
+
+               </BottomPanel><div className="history">
+                   <h4 className="active">today</h4>
+                   <h4>yesterday</h4>
+                   <>
+                   {transactions.map(account=>{
+                       return(
+                           <div
+                           key={transaction.transaction_id}
+                           className="transactions"
+                           >
+                               <div className="row">
+                                   <p>{transaction.name}</p>
+                                   <p>${transaction.amount}</p>
+                        
+                               </div>
+                       );
+                   })}
+                  <>
+                  <button
+                  className="btn--info view-button"
+                  type="button"
+                  name="button"
+                  >
+                      View More
+                  </button>
+               </div>
+               </BottomPanel>
+
+               <BottomPanel>
+                   <div className="charges">
+                       <h4>Charges</h4>
+                       <h4 className="active">week</h4>
+                       <h4>month</h4>
+                       <div className="chart">
+                           <DonutChart width={300} height={200} />
+
+                       </div>
+                       <button className="btn--info view-button"
+                       type="button"
+                       name="button"
+                       >
+                           More Details
+                       </button>
+                   </div>
+               </BottomPanel>
+
+              <BottomPanel className="last-child"
+
+           </div>
            </section>
         )
     }
