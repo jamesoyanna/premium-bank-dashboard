@@ -49,3 +49,9 @@ export const getAccounts = ()=>dispatch={
     .catch(err=>dispatch({type: GET_ACCOUNTS,payload: null}));
 }
 // Account loading
+export const setAccountsLoading = ()=>{
+    return {
+        type: ACCOUNTS_LOADING
+    };
+}
+
