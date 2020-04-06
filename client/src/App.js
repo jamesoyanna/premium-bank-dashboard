@@ -20,7 +20,11 @@ if(localStorage.jwtToken){
   const token = localStorage.jwtToken;
   setAuthToken(token)
 
-  //
+  //Decode
+  const decoded = jwt_decode(token);
+  //Set
+  store.dispatch(setCurrentUser(decoded));
+  
 }
 
 
