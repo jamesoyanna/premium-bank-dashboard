@@ -17,6 +17,10 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 //Check
 if(localStorage.jwtToken){
   //se
+  const token = localStorage.jwtToken;
+  setAuthToken(token)
+
+  //
 }
 
 
